@@ -7,14 +7,20 @@ public class RandomNumberLab2 {
 		int guess = 0;
 		System.out.println("Guess a number between 0 to 10");
 		guess = input.nextInt();
-		if (guess==gameNum){
-			System.out.println("Congrats!!! You guessed correctly.");
-		}
-		if (guess>gameNum){
-			System.out.println("You guessed wrong. Your number was too high.");
-		}
+		if (guess!=gameNum){
+			
+		
+			if (guess>gameNum){
+				System.out.println("You guessed wrong. Your number was too high.");
+			}
+			else{
+				System.out.println("You guessed wrong. Your number was too low.");
+			}
+				
+			}
 		else{
-			System.out.println("You guessed wrong. Your number was too low.");
+			
+			System.out.println("Congrats!!! You guessed correctly.");
 		}
 	
 	}
